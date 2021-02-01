@@ -11,6 +11,7 @@ function profileDevice(onCompletion) {
             'fontsFlash': true,
             'webdriver': true,
             'canvas': true,
+            'deviceMemory': true,
             'webglVendorAndRenderer': isIe()
         }
     };
