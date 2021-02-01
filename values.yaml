@@ -18,9 +18,19 @@ pingdirectory:
 
 pingfederate-admin:
   enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/joshuaarnold/jarnold-wf.git
+    SERVER_PROFILE_PATH: pf
 
 pingfederate-engine:
   enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/joshuaarnold/jarnold-wf.git
+    SERVER_PROFILE_PATH: pf
+
 
 pingaccess:
   enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/joshuaarnold/jarnold-wf.git
+    SERVER_PROFILE_PATH: pa
