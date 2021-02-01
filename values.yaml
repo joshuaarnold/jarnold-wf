@@ -1,0 +1,26 @@
+global:
+  image:
+    tag: "edge"
+  ingress:
+    enabled: true
+    addReleaseNameToHost: prepend
+    defaultDomain: ping-devops.com
+    defaultTlsSecret:
+    annotations:
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+      kubernetes.io/ingress.class: "nginx-public"
+
+pingdataconsole:
+  enabled: true
+
+pingdirectory:
+  enabled: true
+
+pingfederate-admin:
+  enabled: true
+
+pingfederate-engine:
+  enabled: true
+
+pingaccess:
+  enabled: true
